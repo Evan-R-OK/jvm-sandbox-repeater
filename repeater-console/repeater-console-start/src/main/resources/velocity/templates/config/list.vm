@@ -56,7 +56,7 @@
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                        <a href="/online/search.htm"  class="nav-link">
+                        <a href="/online/search"  class="nav-link">
                             <i class="nav-icon fa fa-database"></i>
                             <p>
                                 在线流量
@@ -73,7 +73,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/module/list.htm"  class="nav-link">
+                        <a href="/module/list"  class="nav-link">
                             <i class="nav-icon fa fa-heartbeat"></i>
                             <p>
                                 在线模块
@@ -116,7 +116,7 @@
                                 配置管理 <i class="fa fa-cogs"></i>
                             </h5>
                             <div class="card-tools">
-                                <a href="/config/add.htm" target="_blank" class="btn btn-primary btn-sm float-right"
+                                <a href="/config/add" target="_blank" class="btn btn-primary btn-sm float-right"
                                         data-loading-text="searching" >
                                     新增配置
                                 </a>
@@ -125,7 +125,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form class="form-inline" method="get" action="list.htm">
+                                    <form class="form-inline" method="get" action="list">
                                         <div class="form-group" style="margin-left:10px">
                                             <label for="appName">应用名:</label>
                                             <input type="text" class="form-control" placeholder="appName" name="appName"
@@ -170,11 +170,11 @@
                                             <td style="vertical-align: middle">$!{data.gmtCreate}</td>
                                             <td style="vertical-align: middle">$!{data.gmtModified}</td>
                                             <td style="vertical-align: middle">
-                                                <a href="/config/detail.htm?appName=$!{data.appName}&environment=$!{data.environment}" class="btn btn-primary btn-xs " data-toggle="tooltip"
+                                                <a href="/config/detail?appName=$!{data.appName}&environment=$!{data.environment}" class="btn btn-primary btn-xs " data-toggle="tooltip"
                                                         title="详情" data-env="$!{data.environment}"
                                                         data-app="$!{data.appName}">详情
                                                 </a>
-                                                <a href="/config/edit.htm?appName=$!{data.appName}&environment=$!{data.environment}" class="btn btn-info btn-xs " data-toggle="tooltip"
+                                                <a href="/config/edit?appName=$!{data.appName}&environment=$!{data.environment}" class="btn btn-info btn-xs " data-toggle="tooltip"
                                                    title="编辑" data-env="$!{data.environment}"
                                                    data-app="$!{data.appName}">编辑
                                                 </a>

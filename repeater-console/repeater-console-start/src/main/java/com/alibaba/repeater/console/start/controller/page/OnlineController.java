@@ -29,14 +29,14 @@ public class OnlineController {
     @Resource
     private RecordService recordService;
 
-    @RequestMapping("search.htm")
+    @RequestMapping("search")
     public String search(@ModelAttribute("requestParams") RecordParams params, Model model){
         PageResult<RecordBO> result = recordService.query(params);
         PagerAdapter.transform0(result,model);
         return "online/search";
     }
 
-    @RequestMapping("detail.htm")
+    @RequestMapping("detail")
     public String detail(@ModelAttribute("requestParams") RecordParams params, Model model){
         RepeaterResult<RecordDetailBO> result = recordService.getDetail(params);
         if (!result.isSuccess()) {

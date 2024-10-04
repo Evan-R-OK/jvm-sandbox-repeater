@@ -25,7 +25,7 @@ public class ReplayController {
     @Resource
     private ReplayService replayService;
 
-    @RequestMapping("detail.htm")
+    @RequestMapping("detail")
     public String detail(@ModelAttribute("requestParams") ReplayParams params, Model model) {
         RepeaterResult<ReplayBO> result = replayService.query(params);
         if (!result.isSuccess()) {

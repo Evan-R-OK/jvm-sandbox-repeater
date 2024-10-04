@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/regress")
 public class RegressPageController {
 
-    @RequestMapping("/index.htm")
+    @RequestMapping("/index")
     public String index() {
-        return "/regress/index";
+        return "regress/index";
     }
 }

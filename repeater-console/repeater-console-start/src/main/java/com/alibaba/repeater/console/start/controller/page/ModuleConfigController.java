@@ -34,14 +34,14 @@ public class ModuleConfigController {
     @Resource
     private ModuleConfigService moduleConfigService;
 
-    @RequestMapping("list.htm")
+    @RequestMapping("list")
     public String list(@ModelAttribute("requestParams") ModuleConfigParams params, Model model) {
         PageResult<ModuleConfigBO> result = moduleConfigService.list(params);
         PagerAdapter.transform0(result, model);
         return "config/list";
     }
 
-    @RequestMapping("detail.htm")
+    @RequestMapping("detail")
     public String detail(@ModelAttribute("requestParams") ModuleConfigParams params, Model model) {
         RepeaterResult<ModuleConfigBO> result = moduleConfigService.query(params);
         if (!result.isSuccess()) {
@@ -51,7 +51,7 @@ public class ModuleConfigController {
         return "config/detail";
     }
 
-    @RequestMapping("edit.htm")
+    @RequestMapping("edit")
     public String edit(@ModelAttribute("requestParams") ModuleConfigParams params, Model model) {
         RepeaterResult<ModuleConfigBO> result = moduleConfigService.query(params);
         if (!result.isSuccess()) {
@@ -61,7 +61,7 @@ public class ModuleConfigController {
         return "config/edit";
     }
 
-    @RequestMapping("add.htm")
+    @RequestMapping("add")
     public String add(Model model) {
         RepeaterConfig defaultConf = new RepeaterConfig();
         List<Behavior> behaviors = Lists.newArrayList();

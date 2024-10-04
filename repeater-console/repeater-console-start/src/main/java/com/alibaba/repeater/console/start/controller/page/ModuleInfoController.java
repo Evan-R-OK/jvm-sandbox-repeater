@@ -30,7 +30,7 @@ public class ModuleInfoController {
     @Resource
     private ModuleInfoService moduleInfoService;
 
-    @RequestMapping("list.htm")
+    @RequestMapping("list")
     public String list(@ModelAttribute("requestParams") ModuleInfoParams params, Model model) {
         PageResult<ModuleInfoBO> result = moduleInfoService.query(params);
         PagerAdapter.transform0(result, model);

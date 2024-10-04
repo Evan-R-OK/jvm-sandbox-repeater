@@ -66,7 +66,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/config/list.htm" class="nav-link">
+                        <a href="/config/list" class="nav-link">
                             <i class="nav-icon fa fa-cogs"></i>
                             <p>
                                 配置管理
@@ -74,7 +74,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/module/list.htm" class="nav-link">
+                        <a href="/module/list" class="nav-link">
                             <i class="nav-icon fa fa-heartbeat"></i>
                             <p>
                                 在线模块
@@ -126,7 +126,7 @@
                         <div class="card-body" style="margin-top: -20px">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form class="form-inline" method="get" action="search.htm">
+                                    <form class="form-inline" method="get" action="search">
                                         <div class="form-group" style="margin-left:10px">
                                             <label for="appName">应用名:</label>
                                             <input type="text" class="form-control" placeholder="appName" name="appName"
@@ -180,7 +180,7 @@
 
                                             <td style="vertical-align: middle">
                                                 <a target="_blank"
-                                                   href="detail.htm?appName=$!{data.appName}&traceId=$!{data.traceId}"
+                                                   href="detail?appName=$!{data.appName}&traceId=$!{data.traceId}"
                                                    class="btn btn-primary btn-xs" data-toggle="tooltip"
                                                    title="查看详情">详情</a>
                                                 <button class="btn btn-success btn-xs btn-replay" data-toggle="tooltip"

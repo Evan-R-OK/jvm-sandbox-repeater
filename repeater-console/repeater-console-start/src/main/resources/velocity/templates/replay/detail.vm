@@ -68,7 +68,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/config/list.htm"  class="nav-link">
+                        <a href="/config/list"  class="nav-link">
                             <i class="nav-icon fa fa-cogs"></i>
                             <p>
                                 配置管理
@@ -76,7 +76,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/module/list.htm"  class="nav-link">
+                        <a href="/module/list"  class="nav-link">
                             <i class="nav-icon fa fa-heartbeat"></i>
                             <p>
                                 在线模块
@@ -101,7 +101,7 @@
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="/online/detail.htm?appName=${record.appName}&traceId=$!{record.TraceId}">调用详情</a></li>
+                            <li class="breadcrumb-item"><a href="/online/detail?appName=${record.appName}&traceId=$!{record.TraceId}">调用详情</a></li>
                             <li class="breadcrumb-item active">回放结果</li>
                         </ol>
                     </div>

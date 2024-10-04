@@ -54,7 +54,7 @@ jQuery(function ($) {
                 $("#start-replay-modal").modal('hide')
                 hideLoading(10)
                 if (data.success) {
-                    openNewWindow(protocol + "//" + host + "/replay/detail.htm?repeatId=" + data.data + "&appName=" + appName,
+                    openNewWindow(protocol + "//" + host + "/replay/detail?repeatId=" + data.data + "&appName=" + appName,
                         "执行发起成功，您的浏览器阻止了结果页面自动打开，请先允许或点击前往 >> ")
                 } else {
                     notice(data.message, data.success)
