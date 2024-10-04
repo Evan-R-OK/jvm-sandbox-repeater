@@ -39,11 +39,16 @@
   "pluginIdentities": [
     "http",
     "java-entrance",
-    "java-subInvoke"
+    "java-subInvoke",
+    "mybatis",
+    "ibatis",
+    "dubbo-provider",
+    "dubbo-consumer"
   ],
   "repeatIdentities": [
     "java",
-    "http"
+    "http",
+    "dubbo"
   ],
   "sampleRate": 10000,
   "useTtl": true
